@@ -1,7 +1,7 @@
 (function() {
     'use strict';
     var handle_phpdebugbar_response = function(response) {
-        if (phpdebugbar && phpdebugbar.ajaxHandler) {
+        if (typeof phpdebugbar !== "undefined" && phpdebugbar && phpdebugbar.ajaxHandler) {
             // We have a debugbar and an ajaxHandler
             // Dig through response to look for the 
             // debugbar id.
